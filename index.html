@@ -3,97 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
   <title>Language Suggester</title>
 </head>
 <body>
-  <h1>What programming language suits you?</h1>
-  <h3>Take this survey to see what programming language you should start learning!</h3>
+  <div class="contentWrapper">
+    <img src="css/img/programming.jpg" alt="Picture of programming languages">
+    <h1>What programming language suits you?</h1>
+    <h3 id="subHeader">Take this survey to see what programming language you should start learning!</h3>
 
-  <div class="author">
-    <p>by Billy Lee</p>
-  </div>
-
-  <form id="survey">
-    <label for="q1">Do you want to learn how to program?</label>
+    <div class="author">
+      <p>by Billy Lee</p>
+    </div>
     <br>
-    <form>
-      <input type="radio" name="bool" value="true" checked>
-      Yes
-      </input>
-      <input type="radio" name="bool" value="false">
-      No
-      </input>
+
+    <form id="survey">
+      <label for="q1">Do you want to learn how to program?</label>
+      <br>
+      <form>
+        <input type="radio" name="bool" value="true" checked>
+        Yes
+        </input>
+        <input type="radio" name="bool" value="false">
+        No
+        </input>
+      </form>
+      <br>
+
+      <label for="q2">What do you want to create?</label>
+      <form>
+        <input type="radio" name="interests" value="automate" checked>
+        Automating tasks
+        </input>
+        <input type="radio" name="interests" value="websites">
+        Websites
+        </input>
+        <input type="radio" name="interests" value="games">
+        Video games
+        </input>
+        <input type="radio" name="interests" value="mobile">
+        Mobile apps
+        </input>
+      </form>
+      <br>
+
+      <label for="q3">What type of animal do you want to own?</label>
+      <form>
+        <input type="radio" name="pet" value="dogs" checked>
+        Dogs
+        </input>
+        <input type="radio" name="pet" value="cats">
+        Cats
+        </input>
+        <input type="radio" name="pet" value="reptiles">
+        Reptiles
+        </input>
+        <input type="radio" name="pet" value="insects">
+        Insects
+        </input>
+      </form>
+      <br>
+
+      <label for="q4">Are you team Apple or Android?</label>
+      <form>
+        <input type="radio" name="mobileDevice" value="apple" checked>
+        Team Apple
+        </input>
+        <input type="radio" name="mobileDevice" value="android">
+        Team Android
+        </input>
+      </form>
+      <br>
+
+      <label for="q5">What kind of music do you listen to?</label>
+      <form>
+        <input type="radio" name="music" value="rap" checked>
+        Hip hop/ Rap
+        </input>
+        <input type="radio" name="music" value="country">
+        Country
+        </input>
+        <input type="radio" name="music" value="rnb">
+        RnB
+        </input>
+        <input type="radio" name="music" value="edm">
+        EDM
+        </input>
+      </form>
+      <br>
+      <input type="button" id="btn" value="Submit"/>
     </form>
     <br>
 
-    <label for="q2">What do you want to create?</label>
-    <form>
-      <input type="radio" name="interests" value="automate" checked>
-      Automating tasks
-      </input>
-      <input type="radio" name="interests" value="websites">
-      Websites
-      </input>
-      <input type="radio" name="interests" value="games">
-      Video games
-      </input>
-      <input type="radio" name="interests" value="mobile">
-      Mobile apps
-      </input>
-    </form>
-    <br>
-
-    <label for="q3">What type of animal do you want to own?</label>
-    <form>
-      <input type="radio" name="pet" value="dogs" checked>
-      Dogs
-      </input>
-      <input type="radio" name="pet" value="cats">
-      Cats
-      </input>
-      <input type="radio" name="pet" value="reptiles">
-      Reptiles
-      </input>
-      <input type="radio" name="pet" value="insects">
-      Insects
-      </input>
-    </form>
-    <br>
-
-    <label for="q4">Are you team Apple or Android?</label>
-    <form>
-      <input type="radio" name="mobileDevice" value="apple" checked>
-      Team Apple
-      </input>
-      <input type="radio" name="mobileDevice" value="apple">
-      Team Android
-      </input>
-    </form>
-    <br>
-
-    <label for="q5">What kind of music do you listen to?</label>
-    <form>
-      <input type="radio" name="music" value="rap" checked>
-      Hip hop/ Rap
-      </input>
-      <input type="radio" name="music" value="country">
-      Country
-      </input>
-      <input type="radio" name="music" value="rnb">
-      RnB
-      </input>
-      <input type="radio" name="music" value="edm">
-      EDM
-      </input>
-    </form>
-    <br>
-    <input type="button" id="btn" value="Submit"/>
-  </form>
-  <br>
-
-  <div class="ansContainer">
-    <h2>You would probably want to start learning:</h2>
-    <h1 class="langChoice">Program</h1>
+    <div class="ansContainer">
+      <h2>You would probably want to start learning:</h2>
+      <h1 class="langChoice">Program</h1>
+    </div>
   </div>
 
   <script src="js/scripts.js"></script>
