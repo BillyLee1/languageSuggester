@@ -1,0 +1,17 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+
+.contentWrapper {
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contentWrapper label {
+  font-size: 18px;
+  font-weight: bold;
+}
