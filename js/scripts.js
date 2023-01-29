@@ -40,3 +40,10 @@ document.addEventListener("DOMContentLoaded", function(){
   const submit = document.getElementById("btn");
   submit.addEventListener("click", handleSurvey);
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  const restart = document.getElementById("restartBtn")
+  restart.addEventListener("click", function() {
+    location.reload();
+  }) 
+})
