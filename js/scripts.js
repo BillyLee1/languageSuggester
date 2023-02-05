@@ -1,5 +1,5 @@
 function handleSurvey(event) {
-  event.preventDefault()
+  event.preventDefault();
   hideAns();
 
   const q1 = document.querySelector("input[name='bool']:checked").value;
