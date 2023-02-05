@@ -22,13 +22,10 @@ function surveyOutput(q1, q2, q4) {
       ans.innerText = "JavaScript, HTML, CSS";
     } else if (q2 === "games") {
       ans.innerText = "C#";
+    } else if (q4 === "apple") {
+      ans.innerText = "Swift";
     } else {
-      if (q4 === "apple") {
-        ans.innerText = "Swift";
-      } else {
-        ans.innerText = "Java";
-      }
-      
+      ans.innerText = "Java";
     }
   } else {
     ans.innerText = "Probably shouldn't code since you don't want to learn. :(";
@@ -36,14 +33,14 @@ function surveyOutput(q1, q2, q4) {
   document.querySelector(".hidden").removeAttribute("class");
 }
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
   const submit = document.getElementById("btn");
   submit.addEventListener("click", handleSurvey);
-})
+});
 
 document.addEventListener("DOMContentLoaded", function() {
-  const restart = document.getElementById("restartBtn")
+  const restart = document.getElementById("restartBtn");
   restart.addEventListener("click", function() {
     location.reload();
-  }) 
-})
+  });
+});
